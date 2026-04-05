@@ -473,10 +473,15 @@ section { padding: 7rem 8%; }
 .about-img-wrap { position: relative; }
 
 .about-portrait {
-  width: 100%; 
-  aspect-ratio: 3/4;
-  object-fit: contain;
+  width: 280px;          /* control size */
+  height: 280px;         /* equal = circle */
+  border-radius: 50%;    /* makes it circular */
+  object-fit: cover;     /* fills circle, crops extra */
+  object-position: top;  /* focus on face (top part) */
+  display: block;
+  margin: 0 auto;        /* center it */
 }
+
 
 /* .about-portrait {
   width: 100%; aspect-ratio: 3/4;
